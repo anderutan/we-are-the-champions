@@ -1,0 +1,122 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+// prettier-ignore
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// prettier-ignore
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+// prettier-ignore
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  background-color: #1b1924;
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.upper-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  gap: 10px;
+}
+
+#logo {
+  height: 100px;
+  margin-top: 40px;
+}
+
+#title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+#input-section,
+.name {
+  background-color: #444059;
+  height: 80px;
+  width: 220px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  color: #8a8a8b;
+  font-size: 0.75rem;
+}
+
+.from-to-section {
+  display: flex;
+  gap: 10px;
+}
+
+.name {
+  height: 20px;
+  width: 90px;
+  text-align: center;
+}
+
+.publish-btn {
+  width: 250px;
+  background-color: #28a9f1;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 50px;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.lower-section {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.lower-section h3 {
+  font-size: 1rem;
+}
+
+.comment {
+  background-color: white;
+  color: black;
+  margin: 10px 20px;
+  font-size: 0.65rem;
+  text-align: left;
+  padding: 5px 20px;
+}
+
+.comment p {
+  margin: 0;
+}
+
+.bolder,
+.emoji {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 5px 0;
+}
+
+.comment-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

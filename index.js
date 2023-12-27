@@ -108,11 +108,12 @@ function appendCommentToDiv(item) {
 
   //emoji count
   emojiButton.classList.add('emoji');
-  let emojiCount = 0;
+  let emojiCount = localStorage.getItem(item[0]) || 0;
   emojiButton.textContent = `❤️ ${emojiCount}`;
   emojiButton.addEventListener('click', function () {
     emojiCount++;
     emojiButton.textContent = `❤️ ${emojiCount}`;
+    localStorage.setItem(item[0], emojiCount);
   });
 
   footDiv.appendChild(fromPara);

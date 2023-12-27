@@ -15,7 +15,6 @@ const appSettings = {
 const app = initializeApp(appSettings);
 const database = getDatabase(app);
 const endorsementsListInDB = ref(database, 'endorsements');
-
 const inputEl = document.querySelector('#input-section');
 const fromEl = document.querySelector('#from');
 const toEl = document.querySelector('#to');
@@ -106,7 +105,7 @@ function appendCommentToDiv(item) {
   fromPara.classList.add('bolder', 'from-comment');
   fromPara.textContent = itemFromValue;
 
-  //emoji count
+  //emoji count and save the count on localstorage
   emojiButton.classList.add('emoji');
   let emojiCount = localStorage.getItem(item[0]) || 0;
   emojiButton.textContent = `❤️ ${emojiCount}`;
